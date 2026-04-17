@@ -38,7 +38,7 @@
     Pete Sacco · CEO · Gray Wolf Data Centers         · "{{NAME}} · {{TITLE}} · {{BRAND}}"
 
   01 WHAT WE HEARD
-    <p>When we spoke, it was clear inside five minutes that Gray Wolf is not a data center company looking for a marketing agency. It's a decentralization thesis with a founder who happens to be a natural-born storyteller. You said it yourself: <em>"if I didn't do this, I'd be an actor."</em> The Fairleigh Dickinson keynote was supposed to be 25 minutes and ran 45, then the Q&amp;A ran 90. Clearly, your message isn't the problem. Getting that message to your audience is the problem.</p>
+    <p>When we spoke, it was clear inside five minutes that Gray Wolf is not a data center company looking for a marketing agency. It's a decentralization thesis with a founder who happens to be a natural-born storyteller. You said it yourself: <em>"if I didn't do this, I'd be an actor."</em> The Fairleigh Dickinson keynote was supposed to be 25 minutes and ran 45, then the Q&amp;A ran 90. That's not a content problem. That's a reach problem.</p>
     <p>You also named the shape of it: <em>"If I gave that speech to 2 million people, I would have 100,000 views of that YouTube channel every day. I just don't know how to get myself onto that stage yet."</em> Your holy grail is TEDx, the biggest podcasts, television. None of those open with a substack. They open with a body of work that has already made the argument in full, and did it with production gravity.</p>
     <p>And you told us the honest constraint underneath it all: <em>"It's harder to maintain than we expected. Right now, I'm the guy doing all of the content for both brands."</em> Split between Gray Wolf and your personal Pete Sacco universe, with the Philippines marketing team and the Gartner Reprint Program already running, the gap is not conviction or audience clarity or voice. It's a professional vehicle that carries the performer you already are into rooms you're not yet in.</p>        · one or more <p> tags, synthesis narrative
 
@@ -92,7 +92,7 @@
           <li>Full episode story map: 12 anchor topics across the six-month engagement, each with guest/subject and core audience value</li>
           <li>Brand voice and visual style guide review, aligned to the Gray Wolf thesis and separated from the Pete Sacco personal brand</li>
           <li>Creative references file built collaboratively</li>
-          <li>Content architecture that plugs into your existing marketing strategy</li>
+          <li>Content architecture that plugs into your existing Philippines marketing team and Gartner Reprint Program distribution</li>
         </ul>
       </div>
     </div>
@@ -1365,16 +1365,20 @@ window.addEventListener("load", function(){
 });
 </script>
 
-<!--
-  OPEN-TRACKING PLACEHOLDER, see Proposal/TRACKING.md
-  Leave commented out during build/review. The deploy step replaces this
-  comment block with the live tracking script only when the proposal is
-  finalized and ready to send to the client.
-
-  Replacement block (uncomment and fill in at deploy time):
-
-  <script>if(!sessionStorage.getItem("_t")){sessionStorage.setItem("_t","1");fetch("{{TRACKER_URL}}?prospect={{PROSPECT_NAME_URLENCODED}}&page={{REPO_SLUG}}")}</script>
--->
+<!-- Open tracking -->
+<script>
+(function(){
+  try {
+    if (sessionStorage.getItem("_talex_opened")) return;
+    sessionStorage.setItem("_talex_opened", "1");
+    var u = "https://script.google.com/macros/s/AKfycbxIz5SVcQ2c1IpirdlGIxDzD-4yNOhkI077QBQJQXwadub0wS5hbc-vtjKzAaMJ6u3S3g/exec?action=log_open" +
+            "&slug=gray-wolf-data-centers" +
+            "&referer=" + encodeURIComponent(document.referrer || "") +
+            "&ua=" + encodeURIComponent(navigator.userAgent || "");
+    fetch(u, { method: "GET", mode: "no-cors" });
+  } catch(e) {}
+})();
+</script>
 
 </body>
 </html>
