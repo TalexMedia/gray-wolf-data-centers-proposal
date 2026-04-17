@@ -1137,7 +1137,7 @@ body{background:var(--bg);min-height:100vh}
         <div class="as-body">
           <div class="as-title">Accept Proposal</div>
           <div class="as-desc">I'd like to move forward with:</div>
-          <select id="tier-select" class="tier-select" aria-label="Choose tier to accept">
+          <select id="tier-select" class="tier-select" aria-label="Choose tier to accept" onchange="resetAcceptFlow()">
             <option value="Series" selected>Series · $20,000/mo · Recommended</option>
             <option value="Story">Story · $5,500/mo</option>
             <option value="Legend">Legend · $50,000/mo</option>
@@ -1254,6 +1254,22 @@ function markBooked(){
       bookEl.classList.add("is-done");
     }
   }, 300);
+}
+
+
+function resetAcceptFlow(){
+  var acceptEl = document.getElementById("step-accept");
+  var bookEl   = document.getElementById("step-book");
+  if (acceptEl){
+    acceptEl.classList.remove("is-done");
+    acceptEl.classList.add("is-active");
+  }
+  if (bookEl){
+    bookEl.classList.remove("is-active");
+    bookEl.classList.remove("is-done");
+    bookEl.classList.add("is-locked");
+    bookEl.style.display = "";
+  }
 }
 
 // Wix iframe height sync (matches audit template)
