@@ -8,185 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 
-<!--
-════════════════════════════════════════════════════════════════════════════
-  TALEX PROPOSAL TEMPLATE · v1
-  ════════════════════════════════════════════════════════════════════════
-  Workflow fills the following variables. Leave delimiters as {{NAME}} so
-  a simple find/replace (or a Jinja/Handlebars render) can populate them.
-
-  PROSPECT
-    Gray Wolf Data Centers            · e.g. "Elizabeth Seton Children's"
-    Pete Sacco, CEO     · e.g. "Jane Smith, CMO"
-    Data Infrastructure · Technology         · e.g. "Nonprofit"
-    April 16, 2026             · e.g. "April 15, 2026"
-    30    · e.g. "30"
-
-  HERO
-    You're Not The Guy         · Bebas display, line 1 (e.g. "Your Legend,")
-    Behind A Laptop.         · Bebas display, line 2 (e.g. "Built.")
-    A vehicle built for a natural-born storyteller, so the ideas travel as far as the conviction behind them.              · italic Garamond tagline
-    A Legendeering engagement built around what you told us: Gray Wolf's future depends on the story getting further than the next keynote. Here's the three-tier ladder Tom promised on our call, with the recommended starting point highlighted for where you are right now.                 · 1-2 sentence framing
-
-  STAT STRIP  (3 headline numbers - workflow chooses what matters)
-    12 Anchor Episodes
-    48+ Short-Form Cuts
-    6 Month Foundation
-
-  PULLQUOTE  (direct from Fathom transcript)
-    If I didn't do this, I'd be an actor. I'm the guy that thrives in front of people and on stage, telling story, motivating people.              · verbatim quote, no quotation marks needed
-    Pete Sacco · CEO · Gray Wolf Data Centers         · "{{NAME}} · {{TITLE}} · {{BRAND}}"
-
-  01 WHAT WE HEARD
-    <p>When we spoke, it was clear inside five minutes that Gray Wolf is not a data center company looking for a marketing agency. It's a decentralization thesis with a founder who happens to be a natural-born storyteller. You said it yourself: <em>"if I didn't do this, I'd be an actor."</em> The Fairleigh Dickinson keynote was supposed to be 25 minutes and ran 45, then the Q&amp;A ran 90. Clearly, your message isn't the problem. Getting that message to your audience is the problem.</p>
-    <p>You also named the shape of it: <em>"If I gave that speech to 2 million people, I would have 100,000 views of that YouTube channel every day. I just don't know how to get myself onto that stage yet."</em> Your holy grail is TEDx, the biggest podcasts, television. None of those open with a substack. They open with a body of work that has already made the argument in full, and did it with production gravity.</p>
-    <p>And you told us the honest constraint underneath it all: <em>"It's harder to maintain than we expected. Right now, I'm the guy doing all of the content for both brands."</em> Split between Gray Wolf and your personal Pete Sacco universe, with the Philippines marketing team and the Gartner Reprint Program already running, the gap is not conviction or audience clarity or voice. It's a professional vehicle that carries the performer you already are into rooms you're not yet in.</p>        · one or more <p> tags, synthesis narrative
-
-  02 GAPS  (repeat the .gap-item block per gap; suggested 3-5)
-    <div class="gap-item">
-      <span class="gap-badge critical">Critical</span>
-      <div>
-        <div class="gap-title">Consistency Under Founder Load</div>
-        <div class="gap-desc">You called the schedule "erratic / sporadic, I do it in waves," and the last six months have been "more gaps than consistency." That's not a flaw, it's the predictable result of one person carrying two brands. The cadence has to be owned by a system, not by the founder's calendar.</div>
-      </div>
-    </div>
-    <div class="gap-item">
-      <span class="gap-badge critical">Critical</span>
-      <div>
-        <div class="gap-title">No Documented Strategy</div>
-        <div class="gap-desc">You said it sits "in the mind and maybe in a paper of three people, so barely." The benchmark you agreed with: documentation so clear that a new hire could produce content to your standard inside four weeks, and the audience wouldn't notice the difference. That's the standard Gray Wolf's growth needs before the first franchise conversation.</div>
-      </div>
-    </div>
-    <div class="gap-item">
-      <span class="gap-badge moderate">Moderate</span>
-      <div>
-        <div class="gap-title">Production Quality Behind The Ambition</div>
-        <div class="gap-desc">You're already running a keynote circuit, pitching franchise operators at a million-dollar entry, and positioning for enterprise finance and insurance customers. The stage is at that scale. The video vehicle needs to match, cinematic anchor episodes that function as pitch assets, not just feed filler.</div>
-      </div>
-    </div>
-    <div class="gap-item">
-      <span class="gap-badge strength">Strength</span>
-      <div>
-        <div class="gap-title">Audience Clarity + Point Of View</div>
-        <div class="gap-desc">Four ICPs mapped with real specificity (enterprise AI/HPC users, franchise operators, capital partners, industry analysts). Willing to say things other people in the infrastructure space won't. And the thesis itself, decentralization, sovereignty, edge distribution, is genuinely ownable. This is the part that takes most prospects six months to clarify. You already have it.</div>
-      </div>
-    </div>                 · inject pre-rendered gap items
-
-  03 RECOMMENDED TIER
-    Series                 · "Story" | "Series" | "Legend"
-    Everything In Story + 2 Broadcast-Level Anchor Episodes Per Month             · e.g. "Strategy-First, Self-Shot Social Content Series"
-    $20,000                · e.g. "$5,500"
-    6-Month Minimum                 · e.g. "6-Month Minimum"
-    <p>placeholder, will be replaced</p>       · <p> tags explaining WHY this tier for THEM
-
-  04 DELIVERABLES  (use the .deliverable wrapper per item)
-    <div class="deliverable">
-      <div class="del-header">
-        <div class="del-num">1</div>
-        <div class="del-title">Development &amp; Strategy</div>
-      </div>
-      <div class="del-body">
-        <ul>
-          <li>Full 2-hour Discovery, Audience Mapping, and Brand Values session with Tom, across all four ICPs (enterprise AI/HPC, franchise operators, capital investors, industry analysts)</li>
-          <li>Series concept built for both streams: self-shot Pete (social cadence) + professionally produced anchor episodes (authority)</li>
-          <li>Full episode story map: 12 anchor topics across the six-month engagement, each with guest/subject and core audience value</li>
-          <li>Brand voice and visual style guide review, aligned to the Gray Wolf thesis and separated from the Pete Sacco personal brand</li>
-          <li>Creative references file built collaboratively</li>
-          <li>Content architecture that plugs into your existing marketing strategy</li>
-        </ul>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="del-header">
-        <div class="del-num">2</div>
-        <div class="del-title">Preproduction · Per Anchor Episode</div>
-      </div>
-      <div class="del-body">
-        <ul>
-          <li>Full episode brief delivered two weeks before each shoot: concept, interview questions or script outline, shot list, call sheet</li>
-          <li>Subject and guest coordination support (Gartner analysts, franchise prospects, enterprise IT leaders)</li>
-          <li>B-roll needs assessment and location recommendations</li>
-          <li>All client approvals completed before production begins</li>
-          <li>Self-shot preproduction runs concurrently: shot list and on-camera guide each month</li>
-        </ul>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="del-header">
-        <div class="del-num">3</div>
-        <div class="del-title">Production</div>
-      </div>
-      <div class="del-body">
-        <ul>
-          <li>2 professionally produced anchor episodes per month with single-camera crew (DP + producer/director), professional audio and lighting</li>
-          <li>4 client self-shot social episodes per month, Talex supervision and footage review from your existing studio setup</li>
-          <li>Raw footage review after each shoot, ongoing feedback to sharpen self-shooting quality</li>
-          <li>Anchor shoots can plug into your existing keynote schedule (Fairleigh Dickinson style) or be built on purpose as narrative features</li>
-        </ul>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="del-header">
-        <div class="del-num">4</div>
-        <div class="del-title">Postproduction</div>
-      </div>
-      <div class="del-body">
-        <ul>
-          <li>Anchor episodes: full broadcast-level edit (8-15 min), color grade, audio mix, branded graphics, 2 client revision rounds per episode</li>
-          <li>Self-shot Reels: professional edit into 60-90 second platform-optimized cuts, branded intro/outro, embedded captions</li>
-          <li>Export in platform-correct aspect ratios for LinkedIn (primary), YouTube (the channel you're building), and feed</li>
-        </ul>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="del-header">
-        <div class="del-num">5</div>
-        <div class="del-title">Monthly Deliverables</div>
-      </div>
-      <div class="del-body">
-        <ul>
-          <li>2 anchor episodes (8-15 min each) with broadcast-level finish</li>
-          <li>4 trailers and teasers cut from the anchor episodes (60-90 sec)</li>
-          <li>4 professionally edited self-shot Reels</li>
-          <li>8+ short-form cut-downs across anchor and self-shot content</li>
-          <li>6+ meme and branded graphic assets</li>
-          <li>3+ GIF assets for community and conversation</li>
-          <li>1 monthly content planning call with the Talex strategy team</li>
-        </ul>
-      </div>
-    </div>
-    <div class="deliverable">
-      <div class="del-header">
-        <div class="del-num">6</div>
-        <div class="del-title">6-Month Foundation Totals</div>
-      </div>
-      <div class="del-body">
-        <ul>
-          <li>12 professionally produced anchor episodes, the body of work that opens TEDx and podcast doors</li>
-          <li>24 anchor trailers and teasers for atomic distribution</li>
-          <li>24 self-shot Reels, consistent cadence owned by the system, not your calendar</li>
-          <li>48+ short-form clips and Reels</li>
-          <li>36+ meme and branded graphic assets</li>
-          <li>Complete Content Playbook, brand guide, audience profile, editorial system (the "delegate in four weeks" standard you agreed to)</li>
-          <li>1 quarterly strategy review with Tom</li>
-        </ul>
-      </div>
-    </div>         · inject pre-rendered deliverable blocks
-
-  06 CASE STUDIES
-           · ignored by template; workflow reorders HTML
-                                    (all 3 always shown; featured one goes first)
-
-  07 INVESTMENT
-    $20,000        · e.g. "$5,500"
-    6-Month Minimum           · e.g. "6-Month Minimum"
-
-  ACCEPTANCE FLOW  (two-step: Accept → Book Onboarding Call with Tom)
-                · optional POST endpoint fired on accept click
-    https://calendly.com/talextom/talex-onboarding-meeting             · onboarding call booking link (Tom's Calendly)
-════════════════════════════════════════════════════════════════════════════
--->
-
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -634,6 +455,54 @@ body{background:var(--bg);min-height:100vh}
   border:1px solid rgba(45,140,82,0.4);
 }
 
+/* Tier selector dropdown (inside step 1) */
+.tier-select{
+  width:100%;
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:6px;
+  padding:10px 12px;
+  font-size:14px;
+  font-family:'DM Sans',sans-serif;
+  cursor:pointer;
+  margin-top:8px;
+}
+.tier-select:hover{border-color:var(--o)}
+.tier-select:focus{outline:2px solid var(--o);outline-offset:1px;border-color:var(--o)}
+.tier-select option{background:#1a1a1a;color:#fff}
+
+/* Escape hatch: highlighted 15-min call button */
+.cta-escape{
+  margin-top:1.75rem;
+  padding-top:1.5rem;
+  border-top:1px solid rgba(255,255,255,0.08);
+  text-align:center;
+}
+.cta-escape-label{
+  font-size:13px;
+  color:rgba(255,255,255,0.55);
+  margin-bottom:12px;
+  font-family:'Oswald',sans-serif;
+  letter-spacing:0.04em;
+}
+.cta-escape-btn{
+  display:inline-block;
+  background:transparent;
+  color:var(--o);
+  border:2px solid var(--o);
+  padding:12px 26px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  letter-spacing:0.04em;
+  font-family:'Oswald',sans-serif;
+  text-transform:uppercase;
+  transition:background 0.15s,color 0.15s;
+}
+.cta-escape-btn:hover{background:var(--o);color:#fff}
+
 /* Fallback calendly link */
 .cta-fallback{
   margin-top:1.5rem;
@@ -659,7 +528,7 @@ body{background:var(--bg);min-height:100vh}
 /* ── Print friendly ── */
 @media print{
   body{background:#fff}
-  .accept-flow,.cta-fallback{display:none}
+  .accept-flow,.cta-escape{display:none}
 }
 </style>
 </head>
@@ -728,7 +597,7 @@ body{background:var(--bg);min-height:100vh}
   </div>
 
   <div class="section-block">
-    <p>When we spoke, it was clear inside five minutes that Gray Wolf is not a data center company looking for a marketing agency. It's a decentralization thesis with a founder who happens to be a natural-born storyteller. You said it yourself: <em>"if I didn't do this, I'd be an actor."</em> The Fairleigh Dickinson keynote was supposed to be 25 minutes and ran 45, then the Q&amp;A ran 90. That's not a content problem. That's a reach problem.</p>
+    <p>When we spoke, it was clear inside five minutes that Gray Wolf is not a data center company looking for a marketing agency. It's a decentralization thesis with a founder who happens to be a natural-born storyteller. You said it yourself: <em>"if I didn't do this, I'd be an actor."</em> The Fairleigh Dickinson keynote was supposed to be 25 minutes and ran 45, then the Q&amp;A ran 90. Clearly, your message isn't the problem. Getting that message to your audience is the problem.</p>
     <p>You also named the shape of it: <em>"If I gave that speech to 2 million people, I would have 100,000 views of that YouTube channel every day. I just don't know how to get myself onto that stage yet."</em> Your holy grail is TEDx, the biggest podcasts, television. None of those open with a substack. They open with a body of work that has already made the argument in full, and did it with production gravity.</p>
     <p>And you told us the honest constraint underneath it all: <em>"It's harder to maintain than we expected. Right now, I'm the guy doing all of the content for both brands."</em> Split between Gray Wolf and your personal Pete Sacco universe, with the Philippines marketing team and the Gartner Reprint Program already running, the gap is not conviction or audience clarity or voice. It's a professional vehicle that carries the performer you already are into rooms you're not yet in.</p>
     <!--
@@ -811,28 +680,6 @@ body{background:var(--bg);min-height:100vh}
   <!-- Custom: three-tier ladder for Gray Wolf, Series recommended -->
   <p style="font-size:13px;color:var(--txt3);font-style:italic;margin-bottom:1rem">Normally we lead with a single recommendation. For you, we're showing the whole ladder, so you can see where Gray Wolf sits today and where it goes next.</p>
 
-  <div class="tier-block" style="margin-bottom:1rem;opacity:0.88">
-    <div class="tier-eyebrow" style="color:rgba(255,255,255,0.55)">Lean Start · Bandwidth Relief</div>
-    <div class="tier-name" style="color:rgba(255,255,255,0.92)">Tier · Story</div>
-    <div class="tier-subtitle">Strategy-First, Self-Shot Social Content Series</div>
-    <div class="tier-price-row">
-      <span class="tier-price" style="color:rgba(255,255,255,0.92)">$5,500</span>
-      <span class="tier-per">/ month</span>
-      <span class="tier-term">6-Month Minimum</span>
-    </div>
-    <div class="tier-rationale">
-      <p style="margin-bottom:0.5rem"><strong>When Story makes sense:</strong> if the two-brand bandwidth squeeze is the number one constraint and you want the consistency system before the production spend. Story builds the editorial infrastructure and captures 4 self-shot Reels per month from the studio you already built, with Talex-led strategy and edit doing the heavy lifting.</p>
-      <p style="margin-bottom:0.4rem;font-size:13px;color:rgba(255,255,255,0.65)"><strong>What's inside (monthly):</strong></p>
-      <ul style="font-size:13px;line-height:1.7;margin:0;padding-left:1.1rem;color:rgba(255,255,255,0.8)">
-        <li>Full strategy, audience mapping, and story architecture led by Tom</li>
-        <li>4 self-shot Reels, professionally edited and branded</li>
-        <li>4-8 short-form cut-downs + 4-8 graphic assets + 4 GIFs</li>
-        <li>Monthly planning call + quarterly concept refresh with Tom</li>
-        <li>Complete Content Playbook: audience profile, brand guide, editorial system</li>
-      </ul>
-    </div>
-  </div>
-
   <div class="tier-block" style="border:2px solid var(--o)">
     <div class="tier-eyebrow" style="color:var(--o)">Recommended · Start Here</div>
     <div class="tier-name">Tier · Series</div>
@@ -852,6 +699,28 @@ body{background:var(--bg);min-height:100vh}
         <li>4 anchor trailers and teasers + 8+ short-form cutdowns from the anchors</li>
         <li>Broadcast-level edit, color grade, and audio mix on every anchor</li>
         <li>Deeper story architecture: 12-topic season arc across the engagement</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tier-block" style="margin-top:1rem;opacity:0.88">
+    <div class="tier-eyebrow" style="color:rgba(255,255,255,0.55)">Lean Start · Bandwidth Relief</div>
+    <div class="tier-name" style="color:rgba(255,255,255,0.92)">Tier · Story</div>
+    <div class="tier-subtitle">Strategy-First, Self-Shot Social Content Series</div>
+    <div class="tier-price-row">
+      <span class="tier-price" style="color:rgba(255,255,255,0.92)">$5,500</span>
+      <span class="tier-per">/ month</span>
+      <span class="tier-term">6-Month Minimum</span>
+    </div>
+    <div class="tier-rationale">
+      <p style="margin-bottom:0.5rem"><strong>When Story makes sense:</strong> if the two-brand bandwidth squeeze is the number one constraint and you want the consistency system before the production spend. Story builds the editorial infrastructure and captures 4 self-shot Reels per month from the studio you already built, with Talex-led strategy and edit doing the heavy lifting.</p>
+      <p style="margin-bottom:0.4rem;font-size:13px;color:rgba(255,255,255,0.65)"><strong>What's inside (monthly):</strong></p>
+      <ul style="font-size:13px;line-height:1.7;margin:0;padding-left:1.1rem;color:rgba(255,255,255,0.8)">
+        <li>Full strategy, audience mapping, and story architecture led by Tom</li>
+        <li>4 self-shot Reels, professionally edited and branded</li>
+        <li>4-8 short-form cut-downs + 4-8 graphic assets + 4 GIFs</li>
+        <li>Monthly planning call + quarterly concept refresh with Tom</li>
+        <li>Complete Content Playbook: audience profile, brand guide, editorial system</li>
       </ul>
     </div>
   </div>
@@ -904,7 +773,7 @@ body{background:var(--bg);min-height:100vh}
           <li>Full episode story map: 12 anchor topics across the six-month engagement, each with guest/subject and core audience value</li>
           <li>Brand voice and visual style guide review, aligned to the Gray Wolf thesis and separated from the Pete Sacco personal brand</li>
           <li>Creative references file built collaboratively</li>
-          <li>Content architecture that plugs into your existing Philippines marketing team and Gartner Reprint Program distribution</li>
+          <li>Content architecture that plugs into your existing marketing strategy</li>
         </ul>
       </div>
     </div>
@@ -1187,16 +1056,6 @@ body{background:var(--bg);min-height:100vh}
     <p style="font-size:13px;color:var(--txt3);font-style:italic">One monthly number. Everything above is included.</p>
   </div>
 
-  <div class="invest-block" style="margin-bottom:0.9rem;opacity:0.88">
-    <div class="inv-eyebrow" style="color:var(--txt3)">Lean Start</div>
-    <div class="inv-tier-name" style="color:var(--txt2)">Story</div>
-    <div class="inv-price-row">
-      <span class="inv-price" style="color:var(--txt2)">$5,500</span>
-      <span class="inv-per">/ month</span>
-    </div>
-    <div class="inv-term">6-Month Minimum · Strategy + editorial system + 4 self-shot Reels per month</div>
-  </div>
-
   <div class="invest-block" style="border-color:var(--o);border-width:2px">
     <div class="inv-eyebrow" style="color:var(--o)">Recommended · Start Here</div>
     <div class="inv-tier-name">Series</div>
@@ -1206,6 +1065,16 @@ body{background:var(--bg);min-height:100vh}
     </div>
     <div class="inv-term">6-Month Minimum</div>
     <div class="inv-fine">Everything in Story + 2 broadcast-level anchor episodes per month, produced on location with a professional crew.</div>
+  </div>
+
+  <div class="invest-block" style="margin-top:0.9rem;opacity:0.88">
+    <div class="inv-eyebrow" style="color:var(--txt3)">Lean Start</div>
+    <div class="inv-tier-name" style="color:var(--txt2)">Story</div>
+    <div class="inv-price-row">
+      <span class="inv-price" style="color:var(--txt2)">$5,500</span>
+      <span class="inv-per">/ month</span>
+    </div>
+    <div class="inv-term">6-Month Minimum · Strategy + editorial system + 4 self-shot Reels per month</div>
   </div>
 
   <div class="invest-block" style="margin-top:0.9rem;opacity:0.78">
@@ -1267,7 +1136,13 @@ body{background:var(--bg);min-height:100vh}
         <div class="as-num"><span class="as-num-txt">1</span></div>
         <div class="as-body">
           <div class="as-title">Accept Proposal</div>
-          <div class="as-desc">Confirm you're ready to move forward. We'll finalize the tier on our onboarding call.</div>
+          <div class="as-desc">I'd like to move forward with:</div>
+          <select id="tier-select" class="tier-select" aria-label="Choose tier to accept">
+            <option value="Series" selected>Series · $20,000/mo · Recommended</option>
+            <option value="Story">Story · $5,500/mo</option>
+            <option value="Legend">Legend · $50,000/mo</option>
+            <option value="custom">I'd like a completely custom project</option>
+          </select>
         </div>
         <button type="button" class="as-action" onclick="acceptProposal()">Accept</button>
       </div>
@@ -1283,8 +1158,9 @@ body{background:var(--bg);min-height:100vh}
 
     </div>
 
-    <div class="cta-fallback">
-      Questions first? <a href="https://calendly.com/talextom/touching-base" target="_blank" rel="noopener">Book a 15-minute call with Tom</a>
+    <div class="cta-escape">
+      <div class="cta-escape-label">Still thinking it through?</div>
+      <a class="cta-escape-btn" href="https://calendly.com/talextom/touching-base" target="_blank" rel="noopener">Book a 15-min call with Tom →</a>
     </div>
   </div>
 
@@ -1322,26 +1198,51 @@ function advance(fromId, toId){
   }
 }
 
-function fireWebhook(eventName){
+function fireWebhook(eventName, extra){
   var hook = "";
   if (!hook || hook.indexOf("{{") === 0) return; // unfilled placeholder
+  var payload = {
+    event: eventName,
+    prospect: "Gray Wolf Data Centers",
+    tier: "Series",
+    timestamp: new Date().toISOString()
+  };
+  if (extra && typeof extra === "object"){
+    for (var k in extra) if (Object.prototype.hasOwnProperty.call(extra, k)) payload[k] = extra[k];
+  }
   try {
     fetch(hook, {
       method: "POST",
       headers: {"Content-Type":"application/json"},
-      body: JSON.stringify({
-        event: eventName,
-        prospect: "Gray Wolf Data Centers",
-        tier: "Series",
-        timestamp: new Date().toISOString()
-      })
+      body: JSON.stringify(payload)
     });
   } catch(e){}
 }
 
 function acceptProposal(){
-  fireWebhook("proposal_accepted");
-  advance("step-accept", "step-book");
+  var selectEl = document.getElementById("tier-select");
+  var selectedTier = selectEl ? selectEl.value : "Series";
+  fireWebhook("proposal_accepted", { selectedTier: selectedTier });
+
+  var acceptEl = document.getElementById("step-accept");
+  if (acceptEl){
+    acceptEl.classList.remove("is-active");
+    acceptEl.classList.add("is-done");
+  }
+
+  if (selectedTier === "custom"){
+    var bookEl = document.getElementById("step-book");
+    if (bookEl) bookEl.style.display = "none";
+    window.open("https://calendly.com/talextom/touching-base", "_blank", "noopener");
+    return;
+  }
+
+  var bookEl = document.getElementById("step-book");
+  if (bookEl){
+    bookEl.classList.remove("is-locked");
+    bookEl.classList.add("is-active");
+    bookEl.scrollIntoView({behavior:"smooth",block:"center"});
+  }
 }
 
 function markBooked(){
